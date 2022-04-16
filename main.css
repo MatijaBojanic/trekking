@@ -10,6 +10,11 @@ html {
     height: 100%;
 }
 
+body{
+    max-width: 100%;
+    /* min-width: 350px; */
+    overflow-x: hidden;
+}
 .nav-bar {
     position: fixed;
     top: 0;
@@ -41,13 +46,13 @@ html {
 
 .nav-links a {
     font-size: 0.9rem;
+    font-weight:bold;
     text-decoration: none;
     color: #333333;
     padding: 2px 3vw 2px 3vw;
     color: #fff;
 }
 
-/* Centered text */
 .centered {
     color: white;
     text-align: center;
@@ -56,8 +61,6 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-/* ================== */
 
 .bgimg-1 {
     position: relative;
@@ -73,4 +76,116 @@ html {
 
 .shop-icon {
     vertical-align: middle;
+}
+
+
+[type="checkbox"] {
+    opacity: 0;
+}
+
+[type="checkbox"]+label {
+    position: relative;
+    padding-left: 2rem;
+    cursor: pointer;
+    display: inline-block;
+    color: #666;
+    line-height: 1.2rem;
+}
+
+[type="checkbox"]+label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 18px;
+    height: 18px;
+    outline: 2px solid #aaa;
+    background: #fff;
+}
+
+[type="checkbox"]:checked+label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    outline: 2px solid rgb(170, 155, 119);
+    background: #fff;
+}
+
+
+
+[type="checkbox"]:checked+label::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url(fa-check\ copia.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scale(1);
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+[type="checkbox"]:not(:checked)+label::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url(fa-check\ copia.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scale(0);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.checkbox-super-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 3vw;
+    background-color: rgb(245, 246, 247);
+}
+
+.check-box-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.button {
+    background-color: rgb(170, 155, 119);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+}
+
+@media screen and (max-width:520px) {
+
+    .take-whole-row {
+        padding: 3vw;
+        width: 100%;
+    }
+
+    .check-box-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding:3vw;
+        width: 100%;
+    }
 }
