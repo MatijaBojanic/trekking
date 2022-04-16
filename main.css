@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: quicksand;
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.bgimg-1 {
+    background-position: center;
+    /* background-size: cover; */
+    background-size: cover  ;
+    background-image: url("trekking-bground-v2.jpg");
+    height: 100%;
+}
+
+.nav-bar {
+    position:fixed;
+    top:0 ;
+    left:0;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0.5rem 2rem 0.5rem 5rem;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    background-color: #78797a;
+    color: #fff;
+}
+
+.nav-links a {
+    font-size:0.9rem;
+    padding-left:20px;
+    color: #fff;
+}
+.home-text {
+    color: #fff;
+    text-align:center;
+    padding:12.5%;
+}
+.home-text h1{
+    font-size:3rem;
+}
+#home {
+    align-content:center;
+}
+.logo-img{
+    height:25px;
+    width:35px;
+    margin-left:50px
+}
