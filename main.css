@@ -4,60 +4,61 @@
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     font-family: quicksand;
-    height: 100%;
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
-.bgimg-1 {
-    background-position: center;
-    /* background-size: cover; */
-    background-size: cover  ;
-    background-image: url("trekking-bground-v2.jpg");
     height: 100%;
 }
 
 .nav-bar {
-    position:fixed;
-    top:0 ;
-    left:0;
-    width:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:0.5rem 2rem 0.5rem 5rem;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
     background-color: #78797a;
-    color: #fff;
 }
 
-.nav-links a {
-    font-size:0.9rem;
-    padding-left:20px;
-    color: #fff;
+.nav-logo{
+    margin-left: 2rem;
 }
-.home-text {
-    color: #fff;
-    text-align:center;
-    padding:12.5%;
+
+.logo-img {
+    height: 25px;
+    width: auto;
+    padding-left: 3vw;
+    padding-right:3vw;
 }
-.home-text h1{
-    font-size:3rem;
+/* Phone nav-bar */
+@media only screen and (max-width:600px) {    
+    .nav-links{
+        margin-right:2rem;
+    }
+    .nav-links a {
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: #333333;
+        padding: 2px 3vw 2px 3vw;
+        color: #fff;
+    }
 }
-#home {
-    align-content:center;
-}
-.logo-img{
-    height:25px;
-    width:35px;
-    margin-left:50px
+
+/* Desktop nav-bar*/
+@media only screen and (min-width:600px) {
+
+    .nav-links{
+        margin-right:2rem;
+    }
+    .nav-links a {
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: #333333;
+        padding: 2px 3vw 2px 3vw;
+        color: #fff;
+    }
 }
