@@ -59,6 +59,7 @@ body {
   margin-left: 4rem;
   margin-right: 4rem;
   font-family: 'Open Sans';
+  margin-bottom: 2.5rem;
 }
 
 
@@ -252,8 +253,8 @@ body {
     .column {
       width: 60%;
       display: block;
-      margin-left: 8rem;
-      margin-right: 10rem;
+      margin-left: 6rem;
+      margin-right: 2rem;
     }
     .companyText{
     margin-left: 2rem;
@@ -265,6 +266,22 @@ body {
     width: 60%;
   }
 
-
-
+/* photo grid */
+  .photo-grid {
+    display: grid;
+    gap: 1rem;
+  
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 240px;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .cardPhoto-tall {
+      grid-row: span 2 / auto;
+    }
+  
+    .cardPhoto-wide {
+      grid-column: span 2 / auto;
+    }
+  }
   
