@@ -10,16 +10,69 @@ body {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+
+
+
+
+  /*nav bar*/
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    background-color: #78797a;
+}
+
+.nav-logo {
+    margin-left: 2rem;
+}
+
+.logo-img {
+    height: 25px;
+    width: auto;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.nav-links {
+    margin-right: 2rem;
+}
+
+.nav-links a {
+    font-size: 0.9rem;
+    font-weight:bold;
+    text-decoration: none;
+    color: #333333;
+    padding: 2px 3vw 2px 3vw;
+    color: #fff;
+}
+
+.companyText{
+  color: #555;
+  text-align: center;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  font-family: 'Open Sans';
+}
+
+
   h1{
       font-size: 4rem;
-      color: #555;
+      color: #fff;
   }
 
   .loremIpsum{
       font-size: 2rem;
-      color: #555;
+      color: #fff;
       margin-left: 10vw;
       margin-right: 10vw;
+      font-weight: 100;
   }
 
   h2{
@@ -38,7 +91,7 @@ body {
   }
   
   .about-section {
-    background-image: url('https://www.dynastyjourneys.com/images/everest-trakking1.jpg');
+    background-image: url('https://wallpaperaccess.com/full/1546328.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -89,13 +142,10 @@ body {
       transform: scale(1.05);
   }
   
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
+  
 
+
+  /*footer*/
 
   .footer-container{
       background-color: #78797a;
@@ -164,9 +214,12 @@ body {
       text-align: center;
       font-size: 1rem;
       color: #fff;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
       font-family: 'Open Sans';
       font-weight: 100;
   }
+  
 
 
   @media screen and (max-width: 1150px){
@@ -193,6 +246,23 @@ body {
     .footer-email-form{
         margin-top: 2rem;
     }
+  }
+
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 60%;
+      display: block;
+      margin-left: 8rem;
+      margin-right: 10rem;
+    }
+    .companyText{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    }
+  }
+
+  .column img{
+    width: 60%;
   }
 
 
