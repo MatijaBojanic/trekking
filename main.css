@@ -10,11 +10,12 @@ html {
     height: 100%;
 }
 
-body{
+body {
     max-width: 100%;
     /* min-width: 350px; */
     overflow-x: hidden;
 }
+
 .nav-bar {
     position: fixed;
     top: 0;
@@ -27,6 +28,7 @@ body{
     padding-bottom: 0.3rem;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
     background-color: #78797a;
+    z-index: 50;
 }
 
 .nav-logo {
@@ -46,7 +48,7 @@ body{
 
 .nav-links a {
     font-size: 0.9rem;
-    font-weight:bold;
+    font-weight: bold;
     text-decoration: none;
     color: #333333;
     padding: 2px 3vw 2px 3vw;
@@ -185,7 +187,138 @@ body{
         display: flex;
         align-items: center;
         justify-content: space-around;
-        padding:3vw;
+        padding: 3vw;
         width: 100%;
     }
+}
+
+
+@media screen and (min-width:701px) {
+    .text-line {
+        display: inline-block;
+        margin: 5vw;
+        overflow: hidden;
+        color: gray;
+        text-align: left;
+        line-height: 1.6em;
+    }
+
+    .text-line:before {
+        display: block;
+        float: right;
+        margin-left: 1rem;
+        margin-top: .8em;
+        /* half the line-height */
+        border-top: 2px solid rgb(170, 155, 119);
+        width: 80vw;
+        content: "";
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    .text-line {
+        width: 90%;
+        text-align: center;
+        border-bottom: 2px solid rgb(170, 155, 119);
+        color: gray;
+        line-height: 0.1em;
+        margin: 10px 5% 20px 5%;
+    }
+
+    .text-line span {
+        background: #fff;
+        padding: 0 10px;
+    }
+}
+
+/* -----------------------CARD------------------------------------ */
+
+.shop-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 400px;
+    width: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* this adds the "card" effect */
+    padding: 0.5vw 2vw 1vw 2vw;
+    margin: 3vw;
+    background-color: #f1f1f1;
+    position: relative;
+    align-items: center;
+    /* border: 3px solid rgb(170, 155, 119); */
+}
+
+.color-options {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.product-image {
+    /* width: 80%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: none;
+}
+
+select {
+    border: 0;
+    color: #333333;
+    background-color: #f1f1f1;
+    outline: none;
+    font-size: 1rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+/* option:checked{
+    text-align: center;
+} */
+
+.color-button {
+    background-color: #04AA6D;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 0.6rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.1rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.color-button.gray {
+    background-color: gray;
+}
+
+.color-button.blue {
+    background-color: blue;
+}
+
+.color-button.red {
+    background-color: red;
+}
+
+.product-name {
+    color: rgb(170, 155, 119);
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.product-price {
+    font-weight: bold;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
 }
