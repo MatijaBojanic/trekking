@@ -14,21 +14,28 @@
     <header id="header">
         <nav class="nav-bar">
             <div class="nav-logo">
-                <a href="#about"><img src="Livello 8.png" class="logo-img"></img></a>
+                <a href="#"><img src="Resources/trekking-logo.png" class="logo-img"></img></a>
             </div>
             <div class="nav-links">
                 <a href="#about" class="">ABOUT</a>
                 <a href="#contact" class="">CONTACT</a>
-                <a href="#contact" class=""><img src="fa-shopping-car.png" class="shop-icon"></img></a>
+                <a href="#store-front" class=""><img src="Resources/fa-shopping-car.png" class="shop-icon"></img></a>
             </div>
         </nav>
     </header>
 
-    <div class="bgimg-1" id="main">
-        <h1 class="centered">Our product, your comfort</h1>
+    <!-- Welcome/Home screen -->
+    <div class="home-background-image" id="main">
+        <h1 class="centered-welcome-msg">Our product, your comfort</h1>
+        <a href="#store-front">
+            <img class="bottom-centered-icon" src="Resources/fa-chevron-down.png" />
+        </a>
     </div>
 
-    <div class="checkbox-super-container">
+
+
+    <!-- Checkbox and store container -->
+    <div class="checkbox-and-search-button-container">
         <div class="check-box-container">
             <form>
                 <input type="checkbox" id="test1" value="">
@@ -44,215 +51,217 @@
 
 
         <div class="take-whole-row">
-            <button class="button">See All Products</button>
-
+            <a href="#store-front">
+                <button class="search-button">See All Products</button>
+            </a>
         </div>
-
-
     </div>
 
-    <div>
-        <div>
-            <h5 class="text-line"><span>MEN</span></h5>
+    
+    <!-- Store, split into categories -->
+    <div id="store-front">
+        <!-- Category #1 -->
+        <div class="store">
+            <div>
+                <h5 class="text-line"><span>MEN</span></h5>
+            </div>
+
+            <div class="pager-buttons">
+                <h4 class="pager-counter">1 / 5</h4>
+                <a href=""><img class='pager-button' src="Resources/fa-chevron-left.png" /></a>
+                <a href=""><img class='pager-button' src="Resources/fa-chevron-right.png" /></a>
+            </div>
+
+            <!-- Card Container -->
+            <div class="shop-cards">
+
+                <!-- CARD 1 -->
+                <div class="card">
+
+                    <div class="custom-select">
+                        <select>
+                            <option value="0" selected disabled hidden>SIZE</option>
+                            <option value="1">XS</option>
+                            <option value="2">S</option>
+                            <option value="3">M</option>
+                            <option value="4">L</option>
+                            <option value="5">XL</option>
+                            <option value="6">XXL</option>
+                            <option value="7">XXXL</option>
+                        </select>
+                    </div>
+
+                    <div class="color-options">
+                        <span class="color-button blue"></span>
+                        <span class="color-button yellow"></span>
+                        <span class="color-button gray"></span>
+                    </div>
+
+                    <image class="product-image" src="Resources/product-1.png"></image>
+
+                    <div class="card-category-price">
+                        <h3 class="product-name">T-SHIRT</h3>
+                        <h3 class="product-price">5,00€</h3>
+                    </div>
+
+                </div>
+                <!-- CARD 2 -->
+                <div class="card">
+
+                    <div class="custom-select">
+                        <select>
+                            <option value="0" selected disabled hidden>SIZE</option>
+                            <option value="1">XS</option>
+                            <option value="2">S</option>
+                            <option value="3">M</option>
+                            <option value="4">L</option>
+                            <option value="5">XL</option>
+                            <option value="6">XXL</option>
+                            <option value="7">XXXL</option>
+                        </select>
+                    </div>
+
+                    <image class="product-image" src="Resources/product-2.png"></image>
+
+                    <div class="card-category-price">
+                        <h3 class="product-name">PANTS FORLAZS</h3>
+                        <h3 class="product-price">30,00€</h3>
+                    </div>
+
+                </div>
+                <!-- CARD 3 -->
+                <div class="card">
+
+                    <div class="custom-select">
+                        <select>
+                            <option value="0" selected disabled hidden>SIZE</option>
+                            <option value="1">XS</option>
+                            <option value="2">S</option>
+                            <option value="3">M</option>
+                            <option value="4">L</option>
+                            <option value="5">XL</option>
+                            <option value="6">XXL</option>
+                            <option value="7">XXXL</option>
+                        </select>
+                    </div>
+
+                    <image class="product-image" src="Resources/product-3.png"></image>
+
+                    <div class="card-category-price">
+                        <h3 class="product-name">BACKPACK</h3>
+                        <h3 class="product-price">60,00€</h3>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
-        <div class="shop-cards">
-            
-            <!-- CARD 1 -->
-            <div class="card">
-                <div class="custom-select">
-                    <select>
-                        <option value="0" selected disabled hidden>SIZE</option>
-                        <option value="1">XS</option>
-                        <option value="2">S</option>
-                        <option value="3">M</option>
-                        <option value="4">L</option>
-                        <option value="5">XL</option>
-                        <option value="6">XXL</option>
-                        <option value="7">XXXL</option>
-                    </select>
-                </div>
-
-                <div class="color-options">
-                    <span class="color-button red"></span>
-                    <span class="color-button gray"></span>
-                    <span class="color-button blue"></span>
-                </div>
-
-                <image class="product-image" src="Livello 2.png"></image>
-
-                <div class="card-category-price">
-                    <h3 class="product-name">T-SHIRT</h3>
-                    <h3 class="product-price">5,00€</h3>
-                </div>
-
-
+        <!-- Category #2 -->
+        <div class="store">
+            <div>
+                <h5 class="text-line"><span>WOMEN</span></h5>
             </div>
-            <!-- CARD 2 -->
-            <div class="card">
 
-                <div class="custom-select">
-                    <select>
-                        <option value="0" selected disabled hidden>SIZE</option>
-                        <option value="1">XS</option>
-                        <option value="2">S</option>
-                        <option value="3">M</option>
-                        <option value="4">L</option>
-                        <option value="5">XL</option>
-                        <option value="6">XXL</option>
-                        <option value="7">XXXL</option>
-                    </select>
-                </div>
-
-                <div class="color-options">
-                    <span class="color-button red"></span>
-                    <span class="color-button gray"></span>
-                    <span class="color-button blue"></span>
-                </div>
-
-                <image class="product-image" src="Livello 2.png"></image>
-
-                <div class="card-category-price">
-                    <h3 class="product-name">T-SHIRT</h3>
-                    <h3 class="product-price">5,00€</h3>
-                </div>
-
-
+            <div class="pager-buttons">
+                <h4 class="pager-counter">1 / 5</h4>
+                <a href=""><img class='pager-button' src="Resources/fa-chevron-left.png" /></a>
+                <a href=""><img class='pager-button' src="Resources/fa-chevron-right.png" /></a>
             </div>
-            <!-- CARD 3 -->
-            <div class="card">
+            <!-- Cards Container -->
+            <div class="shop-cards">
 
-                <div class="custom-select">
-                    <select>
-                        <option value="0" selected disabled hidden>SIZE</option>
-                        <option value="1">XS</option>
-                        <option value="2">S</option>
-                        <option value="3">M</option>
-                        <option value="4">L</option>
-                        <option value="5">XL</option>
-                        <option value="6">XXL</option>
-                        <option value="7">XXXL</option>
-                    </select>
+                <!-- CARD 1 -->
+                <div class="card">
+
+                    <div class="custom-select">
+                        <select>
+                            <option value="0" selected disabled hidden>SIZE</option>
+                            <option value="1">XS</option>
+                            <option value="2">S</option>
+                            <option value="3">M</option>
+                            <option value="4">L</option>
+                            <option value="5">XL</option>
+                            <option value="6">XXL</option>
+                            <option value="7">XXXL</option>
+                        </select>
+                    </div>
+
+                    <image class="product-image" src="Resources/product-4.png"></image>
+
+                    <div class="card-category-price">
+                        <h3 class="product-name">JACKET</h3>
+                        <h3 class="product-price">70,00€</h3>
+                    </div>
+
                 </div>
+                <!-- CARD 2 -->
+                <div class="card">
 
-                <div class="color-options">
-                    <span class="color-button red"></span>
-                    <span class="color-button gray"></span>
-                    <span class="color-button blue"></span>
+                    <div class="custom-select">
+                        <select>
+                            <option value="0" selected disabled hidden>SIZE</option>
+                            <option value="1">XS</option>
+                            <option value="2">S</option>
+                            <option value="3">M</option>
+                            <option value="4">L</option>
+                            <option value="5">XL</option>
+                            <option value="6">XXL</option>
+                            <option value="7">XXXL</option>
+                        </select>
+                    </div>
+
+                    <image class="product-image" src="Resources/product-5.png"></image>
+
+                    <div class="card-category-price">
+                        <h3 class="product-name">TREKKING SHOES</h3>
+                        <h3 class="product-price">85,00€</h3>
+                    </div>
+
+
                 </div>
+                <!-- CARD 3 -->
+                <div class="card">
 
-                <image class="product-image" src="Livello 2.png"></image>
+                    <div class="custom-select">
+                        <select>
+                            <option value="0" selected disabled hidden>SIZE</option>
+                            <option value="1">XS</option>
+                            <option value="2">S</option>
+                            <option value="3">M</option>
+                            <option value="4">L</option>
+                            <option value="5">XL</option>
+                            <option value="6">XXL</option>
+                            <option value="7">XXXL</option>
+                        </select>
+                    </div>
 
-                <div class="card-category-price">
-                    <h3 class="product-name">T-SHIRT</h3>
-                    <h3 class="product-price">5,00€</h3>
+                    <div class="color-options">
+                        <span class="color-button pink"></span>
+                        <span class="color-button white"></span>
+                    </div>
+
+                    <image class="product-image" src="Resources/product-6.png"></image>
+
+                    <div class="card-category-price">
+                        <h3 class="product-name">T-SHIRT</h3>
+                        <h3 class="product-price">5,00€</h3>
+                    </div>
+
                 </div>
-
-
             </div>
+        </div>
     </div>
 
-    <div>
-        <div>
-            <h5 class="text-line"><span>WOMEN</span></h5>
+    <!-- Short about-us section -->
+    <div class="about-us-short" id="about">
+        <div class="about-us-box">
+            <h3 class="about-us-title">ABOUT US</h3>
+            <p class="about-us-snippit">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                architecto beatae vitae dicta sunt explicabo.</p>
         </div>
 
-        <div class="shop-cards">
-            
-            <!-- CARD 1 -->
-            <div class="card">
-                <div class="custom-select">
-                    <select>
-                        <option value="0" selected disabled hidden>SIZE</option>
-                        <option value="1">XS</option>
-                        <option value="2">S</option>
-                        <option value="3">M</option>
-                        <option value="4">L</option>
-                        <option value="5">XL</option>
-                        <option value="6">XXL</option>
-                        <option value="7">XXXL</option>
-                    </select>
-                </div>
-
-                <div class="color-options">
-                    <span class="color-button red"></span>
-                    <span class="color-button gray"></span>
-                    <span class="color-button blue"></span>
-                </div>
-
-                <image class="product-image" src="Livello 2.png"></image>
-
-                <div class="card-category-price">
-                    <h3 class="product-name">T-SHIRT</h3>
-                    <h3 class="product-price">5,00€</h3>
-                </div>
-
-
-            </div>
-            <!-- CARD 2 -->
-            <div class="card">
-
-                <div class="custom-select">
-                    <select>
-                        <option value="0" selected disabled hidden>SIZE</option>
-                        <option value="1">XS</option>
-                        <option value="2">S</option>
-                        <option value="3">M</option>
-                        <option value="4">L</option>
-                        <option value="5">XL</option>
-                        <option value="6">XXL</option>
-                        <option value="7">XXXL</option>
-                    </select>
-                </div>
-
-                <div class="color-options">
-                    <span class="color-button red"></span>
-                    <span class="color-button gray"></span>
-                    <span class="color-button blue"></span>
-                </div>
-
-                <image class="product-image" src="Livello 2.png"></image>
-
-                <div class="card-category-price">
-                    <h3 class="product-name">T-SHIRT</h3>
-                    <h3 class="product-price">5,00€</h3>
-                </div>
-
-
-            </div>
-            <!-- CARD 3 -->
-            <div class="card">
-
-                <div class="custom-select">
-                    <select>
-                        <option value="0" selected disabled hidden>SIZE</option>
-                        <option value="1">XS</option>
-                        <option value="2">S</option>
-                        <option value="3">M</option>
-                        <option value="4">L</option>
-                        <option value="5">XL</option>
-                        <option value="6">XXL</option>
-                        <option value="7">XXXL</option>
-                    </select>
-                </div>
-
-                <div class="color-options">
-                    <span class="color-button red"></span>
-                    <span class="color-button gray"></span>
-                    <span class="color-button blue"></span>
-                </div>
-
-                <image class="product-image" src="Livello 2.png"></image>
-
-                <div class="card-category-price">
-                    <h3 class="product-name">T-SHIRT</h3>
-                    <h3 class="product-price">5,00€</h3>
-                </div>
-
-
-            </div>
     </div>
-
 </body>
 
 </html>
