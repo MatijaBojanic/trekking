@@ -62,7 +62,7 @@ body {
 
 /* Background */
 .about-home-section {
-  background-image: url('forest-path-1.jpg');
+  background-image: url('Resources/forest-path-1.jpg');
   position: relative;
   top: 0;
   background-attachment: fixed;
@@ -197,44 +197,22 @@ body {
 }
 
 
-
-
-
-
-
-
 /* Team cards */
-.all-cards{
-  width:100%;
-  display:flex;
+.all-cards {
+  width: 100%;
+  display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
-/* 
-.container::after,
-.all-cards::after {
-  content: "";
-  clear: both;
-  display: table;
-} */
-
-/* .card-container {
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.card-container img {
-  width: 40%;
-} */
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
-  /* border-radius: 20px; */
   background-color: rgb(170, 155, 119);
   transition: all 0.3s ease;
-  height: 400px;
   width: 250px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .card:hover {
@@ -243,16 +221,13 @@ body {
 }
 
 @media screen and (max-width: 1150px) {
-    .card-removable{
-        display: none;
-    }
+  .card-removable {
+    display: none;
+  }
 }
 
 .container {
-  padding: 0 16px;
-  background-color: rgb(170, 155, 119);
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  padding: 0 16px 0 16px;
 }
 
 .team-member-name {
@@ -286,26 +261,21 @@ body {
 }
 
 .card-contact-button:hover {
-
   background-color: #555;
 }
 
 
-@media screen and (max-width: 650px) {
-  .companyText {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-}
 
 
 
 
 
-/*footer-----------------------------------------------------------------------------*/
 
 
-/* .footer-container {
+
+
+/* Footer */
+.footer-container {
   background-color: #78797a;
   padding: 4rem 0 2rem 0;
   box-sizing: border-box;
@@ -382,7 +352,6 @@ body {
   color: #fff;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
-  font-family: 'Open Sans';
   font-weight: 100;
 }
 
@@ -417,10 +386,8 @@ body {
   .column {
     width: 60%;
     display: block;
-    display: flex;
-    justify-content: center;
-    margin-left: 20%;
-
+    margin-left: 6rem;
+    margin-right: 2rem;
   }
 }
 
@@ -428,12 +395,3 @@ body {
   margin-left: 2rem;
   margin-right: 2rem
 }
-
-
-
-
-
-
-
-
- */
