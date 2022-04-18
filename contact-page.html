@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!-- NavBar -->
     <header id="header">
         <nav class="nav-bar">
             <div class="nav-logo">
@@ -25,9 +26,9 @@
         </nav>
     </header>
 
-
-
-    <div class="home-background-image" id="main">
+    <!-- Input form with background -->
+    <div class="home-background-image">
+        <!-- Form and its wrapper -->
         <div class="container">
             <form action="#">
 
@@ -38,7 +39,8 @@
                     <input type="email" id="email" name="email" placeholder="Your email address..">
 
                     <label for="country">Country</label>
-                    <select id="country" name="country">
+                    <select class="country-picker" id="country" name="country">
+                        <option value="0" selected disabled hidden>Country</option>
                         <option value="Afganistan">Afghanistan</option>
                         <option value="Albania">Albania</option>
                         <option value="Algeria">Algeria</option>
