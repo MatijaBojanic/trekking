@@ -1,5 +1,5 @@
 body {
-    font-family: "quicksand";
+    font-family: 'quicksand';
     margin: 0;
   }
   
@@ -58,19 +58,12 @@ body {
 
 
 /* our company -------------------------------------------------------------*/
-/* .companyText{
-  color: #555;
-  text-align: center;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  font-family: 'Open Sans';
-  margin-bottom: 2.5rem;
-} */
-
 
   h2{
-      font-size: 3rem;
-      padding: 4rem;
+      font-size: 2rem;
+      margin:1rem;
+      /* padding: 3rem; */
+      text-align: center;
   }
   .column {
     float: left;
@@ -86,42 +79,33 @@ body {
 
   body,
 html {
-  font-family: 'Open Sans';
+  
   height: 100%;
   scroll-behavior: smooth;
 }
   
   /* background ----------------------------------------------------------*/
   .about-section {
-    background-image: url('background-image.jpg');
-    /* background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('forest-path-1.jpg');
     position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 50px;
-    text-align: center;
-    color: white; */
-    position: relative;
-    opacity: 0.75;
     top: 0;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-image: url('Resources/trekking-contact.jpg'); */
     min-height: 100%;
     z-index: 10;
   }
 
   h1{
-    font-size: 4rem;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
     color: #fff;
     text-align: center;
-    padding: 9rem;
-    
+
   }
   
   .loremIpsum{
@@ -136,6 +120,8 @@ html {
   /* cards------------------------------------------------------------- */
   .container {
     padding: 0 16px;
+    background-color: rgb(170, 155, 119);
+    border-radius: 20px;
   }
   
   .container::after, .row::after {
@@ -145,10 +131,16 @@ html {
   }
   
   .title {
-    color: grey;
+    color: black;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
   }
   
   .button {
+    margin-top:1rem;
+    margin-bottom:1rem;
     border: none;
     border-radius: 20px;
     outline: 0;
@@ -162,14 +154,19 @@ html {
   }
   
   .button:hover {
+    
     background-color: #555;
   }
 
   .card{
       border-radius: 20px;
+      background-color: rgb(170, 155, 119);
+      transition:all 0.3s ease;
+
   }
 
   .card:hover{
+      transition:all 0.3s ease;
       transform: scale(1.05);
   }
   
@@ -334,7 +331,7 @@ html {
     margin-right:2rem
   }
 
-
+/* text boxes------------------------------------------------------------------- */
 
   .about-us-short {
     background-color: rgb(170, 155, 119);
@@ -367,4 +364,32 @@ html {
     text-align: center;
 }
 
-/* #f1f1f1 */
+
+
+
+
+
+.about-us-short-team {
+  background-color: #f1f1f1;
+  padding: 1vw;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.about-us-box-team {
+  margin: 5% 10%;
+  border: solid 1px rgb(100, 91, 71);
+  position: relative;
+}
+
+.about-us-title-team {
+  text-align: center;
+  width: 20rem;
+  background-color: #f1f1f1;
+  color: rgb(100, 91, 71);
+  position: absolute;
+  top: -0.8rem;
+  right: 50%;
+  transform: translate(50%, 0%);
+  font-size: 2rem;
+}
